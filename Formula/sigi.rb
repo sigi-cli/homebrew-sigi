@@ -7,13 +7,27 @@ class Sigi < Formula
   head "https://github.com/hiljusti/sigi.git"
 
   depends_on "rust" => :build
+  
+  # TODO: Remove
+  def whereami msg
+    puts "================ BEGIN: $msg ================"
+    system "pwd"
+    system "ls", "-hal"
+    puts "================   END: $msg ================"
+  end
 
   def install
+    whereami 'before build' # TODO: Remove
+
     system "cargo", "build", "--release"
+
+    whereami 'after build' # TODO: Remove
 
     bin.install "target/release/sigi"
 
     man1.install "sigi.1"
+
+    whereami 'after install' # TODO: Remove
   end
 
   test do
