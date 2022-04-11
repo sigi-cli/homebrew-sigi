@@ -3,7 +3,7 @@ class Sigi < Formula
   license "GPL-2.0-only"
   homepage "https://github.com/hiljusti/sigi"
   url "https://crates.io/api/v1/crates/sigi/3.1.1/download"
-  sha256 "0f0b35c1d21492eff7b90bee47651293b11a48dba86780586082ae686af9a9ba"
+  sha256 "6d063ff4763e7f6925f0ca85563c2e7008e18983d66051361122d1f477bfd77d"
   head "https://github.com/hiljusti/sigi.git"
 
   depends_on "rust" => :build
