@@ -1,9 +1,9 @@
 class Sigi < Formula
   desc "Organizing tool for terminal lovers that hate organizing"
-  license "GPL-2.0-only"
   homepage "https://sigi-cli.org"
   url "https://static.crates.io/crates/sigi/sigi-3.6.3.crate"
   sha256 "15f5ebbe7e51bdc3236f69371805deebbbdd730519cc8e680ba78206b668d96d"
+  license "GPL-2.0-only"
   head "https://github.com/sigi-cli/sigi.git", branch: "core"
 
   depends_on "rust" => :build
